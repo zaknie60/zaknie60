@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID ASSIGNMENT</title>
+    <!-- inline CSS -->
+    <style>
+    .container {
+        display: grid;
+        grid-template-rows: auto ;
+        grid-template-columns: 200px 200px minmax(100px,3fr);
+    /* grid-template-columns: repeat(4,5);
+    background-color: rgb(161, 161, 214); */
+    column-gap: none;
+    row-gap: none;
+    padding: 20px;
+    font-size: large;
+    color: brown;
+    font-weight: bolder;
+    
+    }
+
+        .box-1 {
+            border: solid 1px blue;
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            text-align: center;
+        }
+
+        .box-2 {
+            border: solid 1px lightcoral;
+            height: 200px;
+            width: 200px;
+            background-color: lawngreen;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+
+        .box-3 {
+            border: solid 1px blue;
+            height: 200px;
+            width: 200px;
+             background-color: aqua;
+             text-align: center;
+        }
+        .box-4 {
+            border: solid 1px lightcoral;
+            height: 200px;
+            width: 400px;
+            background-color: lawngreen;
+            grid-column:1 / span 2;
+            padding: none;
+            text-align: start;
+        }
+
+        .box-5 {
+            border: solid 1px blue;
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            text-align: start;
+            padding: auto;
+        }
+
+        .box-6 {
+            border: solid 1px lightcoral;
+            height: 200px;
+            width: 600px;
+            background-color: aqua;
+            grid-row: span 2;
+            grid-column: auto;
+            text-align: start;
+            padding: auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="box-1"> <p class="content-1"> I am Andrawus Zaknie Ephraim</p></div>
+
+        <div class="box-2"> <p class="content-2">Fruits I love: <ul>
+            <li> Apple</li>
+            <li> Quava</li>
+            <li> Banana</li>
+            <li> Water Melon</li>
+        </ul>
+
+        </p></div>
+
+        <div class="box-3"> <p class="content-3"> States I have visited:
+            <ul>
+                <li>Bauchi</li>
+                <li>Gombe</li>
+                <li>Kaduna</li>
+                <li>Anambra</li> 
+            </ul>
+        </p></div>
+        <div class="box-4"> <p class="content-4"> You're a star, dont mar you!</p>
+        <!-- <img src="C:\Users\Ephram Usman\CODE PLATEAU\CSS Grid\images\FB_IMG_16709347108639689.jpg" alt="picture" width="400px" height="200px"> --></div>
+
+        <div class="box-5"> <p class="content-5">Foods I love:
+            <ul>
+                <li> Spaghetti</li>
+                <li> Irish Potatoes</li>
+                <li> Rice and Beans </li>
+                <li> Pounded Yam and Egusi soup</li>
+            </ul>
+        </p></div>
+        <div class="box-6"> <p class="content-6"> In the might of HIS glory <br> Is the light of my story <br> In the death of the Saviour <br> Is the depth of my favours</p></div>
+    </div>
+    
+</body>
+</html>
